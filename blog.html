@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6b4ec;
+        }
+
+        h1,
+        h4 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .square {
+            width: 600px;
+            height: 100px;
+            background: rgb(252, 253, 253);
+            border: 2px solid rgb(180, 6, 162);
+            border-radius: 20px;
+            color: black;
+            padding: 10px;
+            text-align: justify;
+        }
+
+        .square::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 1;
+            height: 2em;
+            padding-right: 8px;
+            font-weight: bold;
+        }
+
+        input[type="checkbox"]:checked~.square {
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>✨ My Colorful Blog ✨</h1>
+    <h4>Welcome to my vibrant corner of the internet where I share thoughts on web development, technology, and the
+        colorful world of code. Each post has its own personality</h4>
+
+    <div class="container">
+        <input type="checkbox" id="box" />
+        <label for="box"></label>
+        <div class="square">
+            React is a powerful JavaScript library for building user interfaces. In this post, we explore the
+            fundamentals of component-based architecture and how it can help you create maintainable and scalable
+            applications. From JSX syntax to state management, discover the key concepts that make React so popular
+            among developers.
+        </div>
+        <div class="square">
+            Web development is constantly evolving with new technologies and frameworks emerging regularly. This article
+            discusses the latest trends in frontend development, including serverless architectures, edge computing, and
+            the growing importance of performance optimization. Learn what skills will be most valuable in the coming
+            years..
+        </div>
+    </div>
+
+</body>
+
+</html>
