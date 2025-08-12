@@ -39,6 +39,7 @@
             text-align: justify;
             box-sizing: border-box;
             font-size: 2vh;
+            transition: all 0.3s ease;
         }
 
         .square::first-letter {
@@ -54,6 +55,12 @@
             color: white;
         }
 
+        @media (hover: hover) {
+            .square:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 2vh rgba(253, 2, 31, 0.944);
+            }
+        }
     </style>
 </head>
 
