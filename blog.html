@@ -41,7 +41,7 @@
             font-weight: bold;
         }
 
-        input[type="checkbox"]:checked~.square {
+        input[type="checkbox"]:checked + label + .square {
             background: black;
             color: white;
         }
@@ -54,14 +54,17 @@
         colorful world of code. Each post has its own personality</h4>
 
     <div class="container">
-        <input type="checkbox" id="box" />
-        <label for="box"></label>
+        <input type="checkbox" id="box1" />
+        <label for="box1"></label>
         <div class="square">
             React is a powerful JavaScript library for building user interfaces. In this post, we explore the
             fundamentals of component-based architecture and how it can help you create maintainable and scalable
             applications. From JSX syntax to state management, discover the key concepts that make React so popular
             among developers.
         </div>
+
+        <input type="checkbox" id="box2" />
+        <label for="box2"></label>
         <div class="square">
             Web development is constantly evolving with new technologies and frameworks emerging regularly. This article
             discusses the latest trends in frontend development, including serverless architectures, edge computing, and
